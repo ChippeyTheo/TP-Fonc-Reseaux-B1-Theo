@@ -168,3 +168,7 @@ sh-3.2# cat /var/db/dhcpclient/leases/*
 </dict>
 </plist>
 ```
+
+### 2. DNS
+
+**🌞 Trouver l'adresse IP du serveur DNS que connaît votre ordinateur**

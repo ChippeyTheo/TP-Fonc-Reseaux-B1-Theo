@@ -6,4 +6,6 @@
 
     nom interface WIFI :        en0
     adresse MAC :               88:e9:fe:75:94:10
-    adresse IP :                10.33.48.133            
+    adresse IP :                10.33.48.133
+
+**🌞 Affichez votre gateway**

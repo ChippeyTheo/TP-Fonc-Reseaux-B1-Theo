@@ -1,6 +1,8 @@
 # TP1 - Premier pas réseau
 
-## 1. Affichage d'informations sur la pile TCP/IP locale
+## I. Exploration locale en solo
+
+### 1. Affichage d'informations sur la pile TCP/IP locale
 
 **🌞 Affichez les infos des cartes réseau de votre PC**
 
@@ -38,9 +40,9 @@ theo@MacBook-Pro-de-chippey ~ % ifconfig en1 | awk '/ether/{print $2}'
 82:6d:86:62:50:01       XXX
 ```
 
-## 2. Modifications des informations
+### 2. Modifications des informations
 
-### A. Modification d'adresse IP (part 1)
+#### A. Modification d'adresse IP (part 1)
 
 **🌞 Utilisez l'interface graphique de votre OS pour changer d'adresse IP :**
 
@@ -56,4 +58,4 @@ en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 	status: active
 ```
 
-
+## II. Exploration locale en duo

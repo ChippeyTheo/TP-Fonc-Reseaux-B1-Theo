@@ -44,3 +44,5 @@ theo@MacBook-Pro-de-chippey ~ % ifconfig en1 | awk '/ether/{print $2}'
 
 **🌞 Utilisez l'interface graphique de votre OS pour changer d'adresse IP :**
 
+
+

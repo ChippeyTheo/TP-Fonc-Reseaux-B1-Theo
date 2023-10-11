@@ -23,6 +23,7 @@ en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 
 ```
 theo@MacBook-Pro-de-chippey ~ % route -n get default
+
    route to: default
 destination: default
        mask: default
@@ -37,6 +38,7 @@ destination: default
 
 ```
 theo@MacBook-Pro-de-chippey ~ % ifconfig en1 | awk '/ether/{print $2}'
+
 82:6d:86:62:50:01       XXX
 ```
 
@@ -48,6 +50,7 @@ theo@MacBook-Pro-de-chippey ~ % ifconfig en1 | awk '/ether/{print $2}'
 
 ```
 theo@MacBook-Pro-de-chippey ~ % ifconfig
+
 en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 	options=400<CHANNEL_IO>
 	ether 88:e9:fe:75:94:10 

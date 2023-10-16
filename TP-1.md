@@ -166,3 +166,15 @@ nameserver 8.8.8.8
 ```
 
 **🌞 Utiliser, en ligne de commande l'outil nslookup (Windows, MacOS) ou dig (GNU/Linux, MacOS) pour faire des requêtes DNS à la main**
+
+* faites un lookup
+
+```
+theo@MacBook-Pro-de-chippey ~ % nslookup google.com 8.8.8.8
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.250.179.110
+```

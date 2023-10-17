@@ -90,7 +90,8 @@ theo@MacBook-Pro-de-chippey ~ % arp -a
 
 🦈 [ARP](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/blob/main/arp.pcapng)
 
-1. Numéro de ligne 1 et 2 : requete de mon Terminal à ma VM. 
+1. Ligne 1 : requete de mon Terminal à ma VM. 
 * `source : 8a:e9:fe:57:59:64 `, c'est l'adresse MAC de mon Terminal.
 * `destination : broadcast`, il ne connait pas encore l'adresse MAC de ma VM, le switch envoie des requetes pour savoir à qui appartient l'IP 192.168.123.2 et renvoyer l'adresse MAC associer. 
 
+2. Ligne 2 : réponse de ma VM.

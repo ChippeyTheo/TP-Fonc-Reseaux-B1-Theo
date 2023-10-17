@@ -26,7 +26,7 @@
 
 * pour trouver l'adresse MAC ???
 * ARP request : le switch demande a tout le monde la requete
-* ARP reply : l'intéressé répond a la requete 
+* ARP reply : l'intéressé répond a la requete  
 
  **binaire :**
  * 1 --> 0

@@ -1,4 +1,4 @@
-# TP1 - Premier pas réseau
+# TP-1 : Premier pas réseau
 
 ## I. Exploration locale en solo
 

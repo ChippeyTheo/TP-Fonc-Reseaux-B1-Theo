@@ -4,4 +4,4 @@
 
 # Mes Cours
 
-* [Cours-IP/MAC](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/tree/main)
+* [Cours-IP/MAC](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/tree/main/Cours.md)

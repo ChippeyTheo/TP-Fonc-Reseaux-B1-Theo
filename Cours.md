@@ -21,7 +21,12 @@
  * IP public = payant, sert au site web 
  * IP prive plage d'IP definie(private network : wiki) IP a l'intérieur d'un LAN
  * internet n'est pas un LAN 
- 
+
+**ARP : Adresse Resolution Protocol**
+
+* pour trouver l'adresse MAC ???
+* ARP request : le switch demande a tout le monde la requete
+* ARP reply : l'intéressé répond a la requete 
 
  **binaire :**
  * 1 --> 0

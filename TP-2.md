@@ -48,4 +48,49 @@ round-trip min/avg/max/stddev = 0.728/0.823/0.980/0.112 ms
 
 **🌞 Wireshark it**
 
-* [ping-pong](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/blob/main/pong-ping.pcapng)
+🦈 [ping-pong](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/blob/main/pong-ping.pcapng)
+
+## II. ARP my bro
+
+**🌞 Check the ARP table**
+
+```
+theo@MacBook-Pro-de-chippey ~ % arp -a
+? (10.33.51.254) at 7c:5a:1c:cb:fd:a4 on en0 ifscope [ethernet]
+? (169.254.78.45) at b0:68:e6:bc:ef:e3 on en0 [ethernet]
+? (192.168.123.2) at 8:0:27:ae:a5:3e    XXX on bridge100 ifscope [bridge]
+mdns.mcast.net (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet]
+
+```
+
+manque la gateway
+
+**🌞 Manipuler la table ARP**
+
+* vider votre table ARP
+
+```
+theo@MacBook-Pro-de-chippey ~ % sudo arp -a -d
+Password:
+10.33.51.254 (10.33.51.254) deleted
+169.254.78.45 (169.254.78.45) deleted
+224.0.0.251 (224.0.0.251) deleted
+theo@MacBook-Pro-de-chippey ~ % arp -a
+? (10.33.51.254) at 7c:5a:1c:cb:fd:a4 on en0 ifscope [ethernet]
+```
+* ré-apparition des données dans la table ARP
+
+```
+theo@MacBook-Pro-de-chippey ~ % arp -a
+? (10.33.51.254) at 7c:5a:1c:cb:fd:a4 on en0 ifscope [ethernet]
+? (192.168.123.2) at 8:0:27:ae:a5:3e on bridge100 ifscope [bridge]
+```
+
+**🌞 Wireshark it**
+
+🦈 [ARP](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/blob/main/arp.pcapng)
+
+1. Numéro de ligne 1 et 2 : requete de mon Terminal à ma VM. 
+* `source : 8a:e9:fe:57:59:64 `, c'est l'adresse MAC de mon Terminal.
+* `destination : broadcast`, il ne connait pas encore l'adresse MAC de ma VM, le switch envoie des requetes pour savoir à qui appartient l'IP 192.168.123.2 et renvoyer l'adresse MAC associer. 
+

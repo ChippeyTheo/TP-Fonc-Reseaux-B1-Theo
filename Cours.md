@@ -17,6 +17,11 @@
  * forme X.X.X.X --> X de 0 a 255
  * netmask : masque (de sous reseaux) (peut etre note /XX apres adresse IP)
  * masque equivaut au nom de la rue d'une adresse et IP le numero dans la rue 
+ * IP public et IP privé
+ * IP public = payant, sert au site web 
+ * IP prive plage d'IP definie(private network : wiki) IP a l'intérieur d'un LAN
+ * internet n'est pas un LAN 
+ 
 
  **binaire :**
  * 1 --> 0

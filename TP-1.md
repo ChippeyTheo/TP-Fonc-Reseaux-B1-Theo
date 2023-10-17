@@ -167,7 +167,7 @@ nameserver 8.8.8.8
 
 **🌞 Utiliser, en ligne de commande l'outil nslookup (Windows, MacOS) ou dig (GNU/Linux, MacOS) pour faire des requêtes DNS à la main**
 
-* faites un lookup
+* pour google.com
 
 ```
 theo@MacBook-Pro-de-chippey ~ % nslookup google.com 8.8.8.8
@@ -178,3 +178,51 @@ Non-authoritative answer:
 Name:	google.com
 Address: 142.250.179.110
 ```
+
+* pour ynov.com
+
+```
+theo@MacBook-Pro-de-chippey ~ % nslookup ynov.com 8.8.8.8                 
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	ynov.com
+Address: 104.26.11.233
+Name:	ynov.com
+Address: 172.67.74.226
+Name:	ynov.com
+Address: 104.26.10.233
+```
+* déterminer l'adresse IP du serveur à qui vous venez d'effectuer ces requêtes
+
+On effectue les requetes sur le serveur 8.8.8.8
+
+* pour l'adresse 231.34.113.12
+
+```
+theo@MacBook-Pro-de-chippey ~ % nslookup 231.34.113.12 8.8.8.8
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+** server can't find 12.113.34.231.in-addr.arpa: NXDOMAIN
+```
+
+* pour l'adresse 78.34.2.17
+
+```
+theo@MacBook-Pro-de-chippey ~ % nslookup 78.34.2.17 8.8.8.8   
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+17.2.34.78.in-addr.arpa	name = cable-78-34-2-17.nc.de.
+
+Authoritative answers can be found from:
+
+```
+
+* interpréter les résultats
+
+La première adresse n'existe pas.
+La seconde n'est pas autoritaire sur l'adresse 8.8.8.8, elle a donc demandé la réponse a quelqu'un d'autre (cascade demande jusqu'a trouver quelqu'un avec la réponse et redescends)

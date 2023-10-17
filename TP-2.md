@@ -48,4 +48,4 @@ round-trip min/avg/max/stddev = 0.728/0.823/0.980/0.112 ms
 
 **🌞 Wireshark it**
 
-* [ping-pong](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/blob/main/ping-pong.pcapng)
+* [ping-pong](https://github.com/ChippeyTheo/TP-Fonc-Reseaux-B1-Theo/blob/main/pong-ping.pcapng)
